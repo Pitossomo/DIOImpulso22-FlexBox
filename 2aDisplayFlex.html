@@ -1,0 +1,64 @@
+<html>
+
+<head>
+  <title>Exemplificando a propriedade display: flex</title>
+</head>
+
+<body>
+  <p>Exemplo sem display: flex</p>
+  <samp>
+    <div style="max-width: 300px;padding: 10px; color: forest; border: 2px solid tomato">
+      <div style="background-color: goldenrod; margin: 5px">item 1</div>
+      <div style="background-color: forestgreen ; margin: 5px">item 2</div>
+      <div style="background-color: navy; margin: 5px">item 3</div>
+    </div>
+  </samp>
+
+  <div style="display:flex; max-width: 300px;padding: 10px; color: forest; border: 2px solid tomato">
+    <div style="background-color: goldenrod; margin: 5px">item 1</div>
+    <div style="background-color: forestgreen ; margin: 5px">item 2</div>
+    <div style="background-color: navy; margin: 5px">item 3</div>
+  </div>
+
+  <p>Exemplo com display: flex</p>
+  <pre>
+    <div style="display: flex; max-width: 300px;padding: 10px; color: forest; border: 2px solid tomato">
+      <div style="background-color: goldenrod; margin: 5px">item 1</div>
+      <div style="background-color: forestgreen ; margin: 5px">item 2</div>
+      <div style="background-color: navy; margin: 5px">item 3</div>
+    </div>
+  </pre>
+  <div style="display:flex; max-width: 300px;padding: 10px; color: forest; border: 2px solid tomato">
+    <div style="background-color: goldenrod; margin: 5px">item 1</div>
+    <div style="background-color: forestgreen ; margin: 5px">item 2</div>
+    <div style="background-color: navy; margin: 5px">item 3</div>
+  </div>
+
+  <p>Exemplo com display: flex e muitos filhos (que reduzem de tamanho e 'vazam' do container)</p>
+  <pre>
+    <div style="max-width: 300px;padding: 10px; color: forest; border: 2px solid tomato">
+      <div style="background-color: goldenrod; margin: 5px">item 1</div>
+      <div style="background-color: forestgreen ; margin: 5px">item 2</div>
+      <div style="background-color: navy; margin: 5px">item 3</div>
+      <div style="background-color: goldenrod; margin: 5px">item 4</div>
+      <div style="background-color: forestgreen ; margin: 5px">item 5</div>
+      <div style="background-color: navy; margin: 5px">item 6</div>
+      <div style="background-color: goldenrod; margin: 5px">item 7</div>
+      <div style="background-color: forestgreen ; margin: 5px">item 8</div>
+      <div style="background-color: navy; margin: 5px">item 9</div>
+    </div>  
+  </pre>
+  <div style="display:flex; max-width: 300px;padding: 10px; color: forest; border: 2px solid tomato">
+    <div style="background-color: goldenrod; margin: 5px">item 1</div>
+    <div style="background-color: forestgreen ; margin: 5px">item 2</div>
+    <div style="background-color: navy; margin: 5px">item 3</div>
+    <div style="background-color: goldenrod; margin: 5px">item 4</div>
+    <div style="background-color: forestgreen ; margin: 5px">item 5</div>
+    <div style="background-color: navy; margin: 5px">item 6</div>
+    <div style="background-color: goldenrod; margin: 5px">item 7</div>
+    <div style="background-color: forestgreen ; margin: 5px">item 8</div>
+    <div style="background-color: navy; margin: 5px">item 9</div>
+  </div>
+</body>
+
+</html>
