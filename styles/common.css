@@ -7,8 +7,9 @@ body {
 }
 
 .example>* {
-  width: fit-content;
+  margin: 5px;
 }
+
 
 pre {
   width: fit-content;
@@ -38,18 +39,22 @@ pre {
   color: white;
 }
 
-.preview> :nth-child(4n+1) {
+.preview> :nth-child(5n+1) {
+  background-color: indianred;
+}
+
+.preview> :nth-child(5n+2) {
   background-color: teal;
 }
 
-.preview> :nth-child(4n+2) {
+.preview> :nth-child(5n+3) {
   background-color: goldenrod;
 }
 
-.preview> :nth-child(4n+3) {
+.preview> :nth-child(5n+4) {
   background-color: forestgreen;
 }
 
-.preview> :nth-child(4n+4) {
-  background-color: coral;
+.preview> :nth-child(5n+5) {
+  background-color: salmon;
 }
