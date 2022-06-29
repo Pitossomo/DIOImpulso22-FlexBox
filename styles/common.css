@@ -7,7 +7,7 @@ body {
 }
 
 example>* {
-  width: 300px;
+  width: fit-content;
 }
 
 pre {

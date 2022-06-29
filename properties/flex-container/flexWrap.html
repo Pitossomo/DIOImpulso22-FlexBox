@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Exemplificando a propriedade flex-wrap</title>
+  <link rel="stylesheet" href="../../styles/common.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1>Propriedade flex-wrap</h1>
+    <ul>
+      <li>Define:</li>
+      <ul>
+        <li>o comportamento dos itens que ultrapassem o tamanho do container</li>
+        <li>se os itens devem ou não quebrar a linha</li>
+        <li>se os itens ultrapassam o limite do container ou quebram a linha</li>
+        <li>a distribuição dos itens no eixo secundário do container</li>
+      </ul>
+      <li>Valores:</li>
+      <ul>
+        <li>nowrap (padrão)</li>
+        <li>wrap</li>
+        <li>wrap-reverse</li>
+      </ul>
+    </ul>
+
+    <h2>flex-wrap: nowrap (padrão)</h2>
+    <example>
+      <code><pre>
+        &ltdiv style="flex-wrap: nowrap; max-width: 300px" class="flex preview">
+          &nbsp;&nbsp;&ltdiv>item 1&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 2&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 3&lt/div>
+        &lt/div>
+      </pre></code>
+      <div style="flex-wrap: nowrap; max-width: 300px" class="flex preview">
+        <div>item 1</div>
+        <div>item 2</div>
+        <div>item 3</div>
+      </div>
+    </example>
+
+    <h2>flex-wrap: nowrap (padrão) com muitos itens</h2>
+    <example>
+      <code><pre>
+        &ltdiv style="flex-wrap: nowrap; max-width: 300px" class="flex preview">
+          &nbsp;&nbsp;&ltdiv>item 1&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 2&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 3&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 4&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 5&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 6&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 7&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 8&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 9&lt/div>
+        &lt/div>
+      </pre></code>
+      <div style="flex-wrap: nowrap; max-width: 300px" class="flex preview">
+        <div>item 1</div>
+        <div>item 2</div>
+        <div>item 3</div>
+        <div>item 4</div>
+        <div>item 5</div>
+        <div>item 6</div>
+        <div>item 7</div>
+        <div>item 8</div>
+        <div>item 9</div>
+      </div>
+    </example>
+
+    <h2>flex-wrap: wrap</h2>
+    <example>
+      <code><pre>
+        &ltdiv style="flex-wrap: wrap" class="flex preview">
+          &nbsp;&nbsp;&ltdiv>item 1&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 2&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 3&lt/div>
+        &lt/div>
+      </pre></code>
+      <div style="flex-wrap: wrap" ; class="flex preview">
+        <div>item 1</div>
+        <div>item 2</div>
+        <div>item 3</div>
+      </div>
+    </example>
+
+    <h2>flex-wrap: wrap com dimensões pré-defnidas</h2>
+    <example>
+      <code><pre>
+        &ltdiv style="flex-wrap: wrap; width: 300px; height: 50px" class="flex preview">
+          &nbsp;&nbsp;&ltdiv>item 1&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 2&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 3&lt/div>
+        &lt/div>
+      </pre></code>
+      <div style="flex-wrap: wrap; width: 300px; height: 50px" ; class="flex preview">
+        <div>item 1</div>
+        <div>item 2</div>
+        <div>item 3</div>
+      </div>
+    </example>
+
+    <h2>flex-wrap: wrap com muitos itens e dimensões pré-definidas</h2>
+    <example>
+      <code><pre>
+        &ltdiv style="flex-wrap: wrap; width: 300px; height: 150px" class="flex preview">
+          &nbsp;&nbsp;&ltdiv>item 1&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 2&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 3&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 4&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 5&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 6&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 7&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 8&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 9&lt/div>
+        &lt/div>
+      </pre></code>
+      <div style="flex-wrap: wrap; width: 300px; height: 150px" class="flex preview">
+        <div>item 1</div>
+        <div>item 2</div>
+        <div>item 3</div>
+        <div>item 4</div>
+        <div>item 5</div>
+        <div>item 6</div>
+        <div>item 7</div>
+        <div>item 8</div>
+        <div>item 9</div>
+      </div>
+
+      <h2>flex-wrap: wrap-reverse com muitos itens e dimensões pré-definidas</h2>
+      <example>
+        <code><pre>
+          &ltdiv style="flex-wrap: wrap-reverse; width: 300px; height: 150px" class="flex preview">
+            &nbsp;&nbsp;&ltdiv>item 1&lt/div>
+            &nbsp;&nbsp;&ltdiv>item 2&lt/div>
+            &nbsp;&nbsp;&ltdiv>item 3&lt/div>
+            &nbsp;&nbsp;&ltdiv>item 4&lt/div>
+            &nbsp;&nbsp;&ltdiv>item 5&lt/div>
+            &nbsp;&nbsp;&ltdiv>item 6&lt/div>
+            &nbsp;&nbsp;&ltdiv>item 7&lt/div>
+            &nbsp;&nbsp;&ltdiv>item 8&lt/div>
+            &nbsp;&nbsp;&ltdiv>item 9&lt/div>
+          &lt/div>
+        </pre></code>
+        <div style="flex-wrap: wrap-reverse; width: 300px; height: 150px" class="flex preview">
+          <div>item 1</div>
+          <div>item 2</div>
+          <div>item 3</div>
+          <div>item 4</div>
+          <div>item 5</div>
+          <div>item 6</div>
+          <div>item 7</div>
+          <div>item 8</div>
+          <div>item 9</div>
+        </div>
+      </example>
+  </div>
+</body>
+
+</html>
