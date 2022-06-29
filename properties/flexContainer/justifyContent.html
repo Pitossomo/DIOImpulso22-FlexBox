@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Exemplificando a propriedade justify-content</title>
+  <link rel="stylesheet" href="../../styles/common.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1>Propriedade justify-content</h1>
+    <ul>
+      <li>Define o alinhamento dos itens dentro do contaner ao longo do eixo principal</li>
+      <li>Caso os itens ocupem 100% do container, não se aplica</li>
+      <li>Isso porque essa propriedade define a distribuição do espaço excedente não ocupado pelos itens ao longo do
+        eixo principal</li>
+      <li>Valores:</li>
+      <ul>
+        <li>flex-start - início do container</li>
+        <li>flex-end - final do container, respeitando o limite do conteúdo</li>
+        <li>center - centro do container</li>
+        <li>space-between - cria espaçamento igual entre os elementos, removendo os espaços no início e no fim do eixo
+          principal</li>
+        <li>space-around - cria espaçamento igual entre os elementos, com metade deste espaçamento no começo e no fim do
+          eixo principal</li>
+      </ul>
+    </ul>
+
+    <h2>justify-content: flex-start (padrão)</h2>
+    <example>
+      <code><pre>
+        &ltdiv style="justify-content: flex-start" class="flex preview">
+          &nbsp;&nbsp;&ltdiv>item 1&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 2&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 3&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 4&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 5&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 6&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 7&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 8&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 9&lt/div>
+        &lt/div>
+      </pre></code>
+      <div style="justify-content: flex-start" class="flex preview">
+        <div>item 1</div>
+        <div>item 2</div>
+        <div>item 3</div>
+        <div>item 4</div>
+        <div>item 5</div>
+        <div>item 6</div>
+        <div>item 7</div>
+        <div>item 8</div>
+        <div>item 9</div>
+      </div>
+    </example>
+
+    <h2>justify-content: flex-end</h2>
+    <example>
+      <code><pre>
+        &ltdiv style="justify-content: flex-end" class="flex preview">
+          &nbsp;&nbsp;&ltdiv>item 1&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 2&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 3&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 4&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 5&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 6&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 7&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 8&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 9&lt/div>
+        &lt/div>
+      </pre></code>
+      <div style="justify-content: flex-end" class="flex preview">
+        <div>item 1</div>
+        <div>item 2</div>
+        <div>item 3</div>
+        <div>item 4</div>
+        <div>item 5</div>
+        <div>item 6</div>
+        <div>item 7</div>
+        <div>item 8</div>
+        <div>item 9</div>
+      </div>
+    </example>
+
+    <h2>justify-content: flex-end com dimensões pré-definidas</h2>
+    <example>
+      <code><pre>
+        &ltdiv style="justify-content: flex-end; width: 300px" class="flex preview">
+          &nbsp;&nbsp;&ltdiv>item 1&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 2&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 3&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 4&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 5&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 6&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 7&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 8&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 9&lt/div>
+        &lt/div>
+      </pre></code>
+      <div style="justify-content: flex-end; width: 300px" class="flex preview">
+        <div>item 1</div>
+        <div>item 2</div>
+        <div>item 3</div>
+        <div>item 4</div>
+        <div>item 5</div>
+        <div>item 6</div>
+        <div>item 7</div>
+        <div>item 8</div>
+        <div>item 9</div>
+      </div>
+    </example>
+
+    <h2>justify-content: flex-start e flex-direction: row-reverse, com dimensões pré-definidas</h2>
+    <example>
+      <code><pre>
+        &ltdiv style="justify-content: flex-start; flex-direction: row-reverse; width: 300px" class="flex preview">
+          &nbsp;&nbsp;&ltdiv>item 1&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 2&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 3&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 4&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 5&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 6&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 7&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 8&lt/div>
+          &nbsp;&nbsp;&ltdiv>item 9&lt/div>
+        &lt/div>
+      </pre></code>
+      <div style="justify-content: flex-start; flex-direction: row-reverse; width: 300px" class="flex preview">
+        <div>item 1</div>
+        <div>item 2</div>
+        <div>item 3</div>
+        <div>item 4</div>
+        <div>item 5</div>
+        <div>item 6</div>
+        <div>item 7</div>
+        <div>item 8</div>
+        <div>item 9</div>
+      </div>
+    </example>
+
+    <p>Observa-se que entre os dois últimos resultados a disposição foi parecida, mas a ordem dos itens ficou invertida
+    </p>
+
+  </div>
+</body>
+
+</html>
