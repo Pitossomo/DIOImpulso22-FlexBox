@@ -1,11 +1,24 @@
-pre {
-  background-color: lightgray;
-  border-radius: 3px;
+body {
   font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 }
 
 .example {
   display: flex;
+}
+
+example>* {
+  width: 500px;
+}
+
+pre {
+  width: fit-content;
+  white-space: pre-line;
+  padding: 10px;
+  background-color: lightgray;
+  border-radius: 3px;
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  font-size: small;
+  line-height: 1.5em;
 }
 
 .preview {
