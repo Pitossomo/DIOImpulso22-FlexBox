@@ -3,3 +3,35 @@ pre {
   border-radius: 3px;
   font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 }
+
+.example {
+  display: flex;
+}
+
+.preview {
+  padding: 5px;
+  color: forest;
+  border: 2px solid tomato;
+  border-radius: 4px;
+}
+
+.preview>* {
+  padding: 5px;
+  margin: 5px;
+}
+
+.preview> :nth-child(4n+1) {
+  background-color: teal;
+}
+
+.preview> :nth-child(4n+2) {
+  background-color: goldenrod;
+}
+
+.preview> :nth-child(4n+3) {
+  background-color: forestgreen;
+}
+
+.preview> :nth-child(4n+4) {
+  background-color: coral;
+}
