@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path='/' element={<Homepage />} />
+        <Route path='/DIOImpulso22-FlexBox' element={<Homepage />} />
         <Route path='/container/displayFlex' element={<DisplayFlex />} />
       </Routes>
     </div>
