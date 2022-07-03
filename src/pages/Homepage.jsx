@@ -19,7 +19,8 @@ const Homepage = () => {
         <h1>Propriedades</h1>
         <h2>Flex Container</h2>
         <ul>
-          <Link to='/container/displayFlex'>display: flex</Link>
+          <li><Link to='/container/displayFlex'>display: flex</Link></li>
+          <li><Link to='/container/flexDirection'>flex-direction</Link></li>
         </ul>
       </section>
     </div>
