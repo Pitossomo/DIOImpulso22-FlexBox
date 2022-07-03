@@ -4,6 +4,7 @@ import Homepage from './pages/Homepage';
 import DisplayFlex from './pages/flexContainer/DisplayFlex';
 import FlexDirection from './pages/flexContainer/FlexDirection';
 import FlexFlow from './pages/flexContainer/FlexFlow';
+import FlexWrap from './pages/flexContainer/FlexWrap';
 
 function App() {
   return (
