@@ -1,9 +1,7 @@
-const Preview = ({ flex = true, style, numItems = 3 }) => {
-  const previewStyle = flex ? { ...style, display: "flex" } : style
-  console.log(previewStyle)
+const Preview = ({ style, numItems = 3 }) => {
   return (
-    <div style={previewStyle} className="preview">
-      {[...Array(numItems)].map((el, i) => <div>item {i + 1}</div>)}
+    <div style={style} className="preview">
+      {[...Array(numItems)].map((el, i) => <div key={i}>item {i + 1}</div>)}
     </div>
   )
 }

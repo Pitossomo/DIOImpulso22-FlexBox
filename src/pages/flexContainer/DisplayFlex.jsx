@@ -1,4 +1,4 @@
-import Preview from "../../components/Preview"
+import CodeExample from "../../components/CodeExample"
 
 const DisplayFlex = () => {
   return (
@@ -13,46 +13,13 @@ const DisplayFlex = () => {
       </ul>
 
       <h2>Sem display: flex</h2>
-      <div className="example">
-        <code><pre>
-          &lt;div className="preview"&gt;
-          &nbsp;&nbsp;&lt;div&gt;item 1&lt;/div&gt;
-          &nbsp;&nbsp;&lt;div&gt;item 2&lt;/div&gt;
-          &nbsp;&nbsp;&lt;div&gt;item 3&lt;/div&gt;
-          &lt;/div&gt;
-        </pre></code>
-        <Preview flex={false} />
-      </div>
+      <CodeExample />
 
       <h2>Exemplo com display: flex</h2>
-      <div className="example">
-        <code><pre>
-          &lt;div style="display: flex" className="preview"&gt;
-          &nbsp;&nbsp;&lt;div&gt;item 1&lt;/div&gt;
-          &nbsp;&nbsp;&lt;div&gt;item 2&lt;/div&gt;
-          &nbsp;&nbsp;&lt;div&gt;item 3&lt;/div&gt;
-          &lt;/div&gt;
-        </pre></code>
-        <Preview />
-      </div>
+      <CodeExample style={{ display: "flex" }} />
 
       <h2>Exemplo com display: flex e muitos filhos (que reduzem de tamanho e 'vazam' do container)</h2>
-      <div className="example">
-        <code><pre>
-          &lt;div style="display: flex; max-width: 300px" className="preview"&gt;
-          &nbsp;&nbsp;&lt;div&gt;item 1&lt;/div&gt;
-          &nbsp;&nbsp;&lt;div&gt;item 2&lt;/div&gt;
-          &nbsp;&nbsp;&lt;div&gt;item 3&lt;/div&gt;
-          &nbsp;&nbsp;&lt;div&gt;item 4&lt;/div&gt;
-          &nbsp;&nbsp;&lt;div&gt;item 5&lt;/div&gt;
-          &nbsp;&nbsp;&lt;div&gt;item 6&lt;/div&gt;
-          &nbsp;&nbsp;&lt;div&gt;item 7&lt;/div&gt;
-          &nbsp;&nbsp;&lt;div&gt;item 8&lt;/div&gt;
-          &nbsp;&nbsp;&lt;div&gt;item 9&lt;/div&gt;
-          &lt;/div&gt;
-        </pre></code>
-        <Preview style={{ maxWidth: "300px" }} numItems={9} />
-      </div>
+      <CodeExample style={{ display: "flex", maxWidth: "300px" }} numItems={9} />
     </div>
   )
 }
