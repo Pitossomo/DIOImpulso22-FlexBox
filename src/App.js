@@ -1,24 +1,19 @@
-import { Route, Routes } from 'react-router-dom';
 import './styles/common.css';
-import Homepage from './pages/Homepage';
-import DisplayFlex from './pages/flexContainer/DisplayFlex';
-import FlexDirection from './pages/flexContainer/FlexDirection';
-import FlexFlow from './pages/flexContainer/FlexFlow';
-import FlexWrap from './pages/flexContainer/FlexWrap';
-import JustifyContent from './pages/flexContainer/JustifyContent';
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route path='/' element={<Homepage />} />
-        <Route path='/DIOImpulso22-FlexBox' element={<Homepage />} />
-        <Route path='/container/displayFlex' element={<DisplayFlex />} />
-        <Route path='/container/flexDirection' element={<FlexDirection />} />
-        <Route path='/container/flexWrap' element={<FlexWrap />} />
-        <Route path='/container/flexFlow' element={<FlexFlow />} />
-        <Route path='/container/justifyContent' element={<JustifyContent />} />
-      </Routes>
+      <nav>
+        <ul>
+          <li><Link to='/'>Home</Link></li>
+          <li><Link to='/container/displayFlex'>display: flex</Link></li>
+          <li><Link to='/container/flexDirection'>flex-direction</Link></li>
+          <li><Link to='/container/flexWrap'>flex-wrap</Link></li>
+          <li><Link to='/container/flexFlow'>flex-flow</Link></li>
+          <li><Link to='/container/JustifyContent'>justify-content</Link></li>
+        </ul>
+      </nav>
     </div>
   );
 }
