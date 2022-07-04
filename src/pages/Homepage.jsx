@@ -23,6 +23,7 @@ const Homepage = () => {
           <li><Link to='/container/flexDirection'>flex-direction</Link></li>
           <li><Link to='/container/flexWrap'>flex-wrap</Link></li>
           <li><Link to='/container/flexFlow'>flex-flow</Link></li>
+          <li><Link to='/container/JustifyContent'>justify-content</Link></li>
         </ul>
       </section>
     </div>

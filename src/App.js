@@ -5,6 +5,7 @@ import DisplayFlex from './pages/flexContainer/DisplayFlex';
 import FlexDirection from './pages/flexContainer/FlexDirection';
 import FlexFlow from './pages/flexContainer/FlexFlow';
 import FlexWrap from './pages/flexContainer/FlexWrap';
+import JustifyContent from './pages/flexContainer/JustifyContent';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/container/flexDirection' element={<FlexDirection />} />
         <Route path='/container/flexWrap' element={<FlexWrap />} />
         <Route path='/container/flexFlow' element={<FlexFlow />} />
+        <Route path='/container/justifyContent' element={<JustifyContent />} />
       </Routes>
     </div>
   );
