@@ -35,6 +35,21 @@ const AlignItems = () => {
 
       <h2>align-items: baseline</h2>
       <CodeExample style={{ display: "flex", alignItems: "baseline" }} />
+
+      <h2>align-items: stretch (padrão) em coluna</h2>
+      <CodeExample style={{ display: "flex", alignItems: "stretch", flexDirection: "column", width: "300px" }} />
+
+      <h2>align-items: center em coluna</h2>
+      <CodeExample style={{ display: "flex", alignItems: "center", flexDirection: "column", width: "300px" }} />
+
+      <h2>align-items: flex-start em coluna</h2>
+      <CodeExample style={{ display: "flex", alignItems: "flex-start", flexDirection: "column", width: "300px" }} />
+
+      <h2>align-items: flex-end em coluna</h2>
+      <CodeExample style={{ display: "flex", alignItems: "flex-end", flexDirection: "column", width: "300px" }} />
+
+      <h2>align-items: baseline em coluna</h2>
+      <CodeExample style={{ display: "flex", alignItems: "baseline", flexDirection: "column", width: "300px" }} />
     </div>
   )
 }
