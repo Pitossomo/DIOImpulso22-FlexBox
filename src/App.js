@@ -12,6 +12,7 @@ function App() {
           <li><Link to='/container/flexWrap'>flex-wrap</Link></li>
           <li><Link to='/container/flexFlow'>flex-flow</Link></li>
           <li><Link to='/container/JustifyContent'>justify-content</Link></li>
+          <li><Link to='/container/AlignContent'>align-content</Link></li>
         </ul>
       </nav>
     </div>

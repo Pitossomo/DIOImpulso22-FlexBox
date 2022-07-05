@@ -1,10 +1,10 @@
 import CodeExample from "../../components/CodeExample"
 
 const JustifyContent = () => (
-  <div class="wrapper">
+  <div className="wrapper">
     <h1>Propriedade justify-content</h1>
     <ul>
-      <li>Define o alinhamento dos itens dentro do contaner ao longo do eixo principal</li>
+      <li>Define o alinhamento dos itens dentro do container ao longo do eixo principal</li>
       <li>Caso os itens ocupem 100% do container, não se aplica</li>
       <li>Isso porque essa propriedade define a distribuição do espaço excedente não ocupado pelos itens ao longo do
         eixo principal</li>
@@ -28,7 +28,7 @@ const JustifyContent = () => (
     <CodeExample style={{ display: "flex", justifyContent: "flex-end" }} numItems={9} />
 
     <h2>justify-content: flex-end com dimensões pré-definidas</h2>
-    <CodeExample style={{ display: "flex", justifyContent: "flex-start", width: "300px" }} numItems={9} />
+    <CodeExample style={{ display: "flex", justifyContent: "flex-end", width: "300px" }} numItems={9} />
 
     <h2>justify-content: flex-start e flex-direction: row-reverse, com dimensões pré-definidas</h2>
     <CodeExample style={{ display: "flex", justifyContent: "flex-start", flexDirection: "row-reverse", width: "300px" }} numItems={9} />

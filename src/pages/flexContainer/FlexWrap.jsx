@@ -1,7 +1,7 @@
 import CodeExample from "../../components/CodeExample"
 
 const FlexWrap = () => (
-  <div class="wrapper">
+  <div className="wrapper" >
     <h1>Propriedade flex-wrap</h1>
     <ul>
       <li>Define:</li>
@@ -39,7 +39,7 @@ const FlexWrap = () => (
 
     <h2>flex-wrap: wrap em coluna e com dimensões pré-definidas</h2>
     <CodeExample style={{ display: "flex", flexWrap: "wrap", flexDirection: "column", width: "300px", height: "150px" }} numItems={9} />
-  </div>
+  </div >
 )
 
 export default FlexWrap
