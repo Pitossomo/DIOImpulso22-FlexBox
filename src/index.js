@@ -8,7 +8,8 @@ import FlexDirection from './pages/flexContainer/FlexDirection';
 import FlexWrap from './pages/flexContainer/FlexWrap';
 import FlexFlow from './pages/flexContainer/FlexFlow';
 import JustifyContent from './pages/flexContainer/JustifyContent';
-import AlignContent from './pages/flexContainer/AlignItems';
+import AlignContent from './pages/flexContainer/AlignContent';
+import AlignItems from './pages/flexContainer/AlignItems';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,6 +22,7 @@ root.render(
         <Route path='/container/flexWrap' element={<FlexWrap />} />
         <Route path='/container/flexFlow' element={<FlexFlow />} />
         <Route path='/container/justifyContent' element={<JustifyContent />} />
+        <Route path='/container/alignItems' element={<AlignItems />} />
         <Route path='/container/alignContent' element={<AlignContent />} />
       </Routes>
     </HashRouter>
