@@ -3,11 +3,11 @@ import Codeline from "./Codeline"
 
 const Codebox = ({ style, childrenStyle, numItems }) => {
   const containerInlineStyle = objectToCSS(style)
-  const childrenInlineStyle = objectToCSS(childrenStyle)
+  const defaultChildrenInlineStyle = objectToCSS(childrenStyle.default)
 
   const itemDivString = (index, itemStyle) => {
     let itemDiv = `<div`
-    if (childrenInlineStyle.length > 1) itemDiv += ` style="${itemStyle}"`
+    if (defaultChildrenInlineStyle.length > 1) itemDiv += ` style="${itemStyle}"`
     itemDiv += `> item ${index + 1
       }</div> `
     return itemDiv
@@ -21,7 +21,14 @@ const Codebox = ({ style, childrenStyle, numItems }) => {
     <code><pre>
       {openParentDiv}
       {
-        [...Array(numItems)].map((el, i) => <Codeline key={i}>{itemDivString(i, childrenInlineStyle)}</Codeline>)
+        [...Array(numItems)].map((el, i) => {
+          let itemDivStyle = childrenStyle[i + 1] ? objectToCSS(childrenStyle[i + 1]) : defaultChildrenInlineStyle
+          return (
+            <Codeline key={`c${i + 1}`}>
+              {itemDivString(i, itemDivStyle)}
+            </Codeline>
+          )
+        })
       }
       {'</div>'}
     </pre></code>

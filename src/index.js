@@ -10,6 +10,8 @@ import FlexFlow from './pages/flexContainer/FlexFlow';
 import JustifyContent from './pages/flexContainer/JustifyContent';
 import AlignContent from './pages/flexContainer/AlignContent';
 import AlignItems from './pages/flexContainer/AlignItems';
+import FlexGrow from './pages/flexItems/FlexGrow';
+import FlexBasis from './pages/flexItems/FlexBasis';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,6 +26,9 @@ root.render(
         <Route path='/container/justifyContent' element={<JustifyContent />} />
         <Route path='/container/alignItems' element={<AlignItems />} />
         <Route path='/container/alignContent' element={<AlignContent />} />
+        <Route path='/items/flexGrow' element={<FlexGrow />} />
+        <Route path='/items/flexBasis' element={<FlexBasis />} />
+        <Route path='/items/flexBasis' element={<FlexShrink />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>

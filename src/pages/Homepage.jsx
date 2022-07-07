@@ -27,6 +27,13 @@ const Homepage = () => {
           <li><Link to='/container/AlignItems'>align-items</Link></li>
           <li><Link to='/container/AlignContent'>align-content</Link></li>
         </ul>
+        <h2>Flex Items</h2>
+        <ul>
+          <li><Link to='/items/flexGrow'>flex-grow</Link></li>
+          <li><Link to='/items/flexBasis'>flex-basis</Link></li>
+          <li><Link to='/items/flexShrink'>flex-shrink</Link></li>
+        </ul>
+
       </section>
     </div>
   )
