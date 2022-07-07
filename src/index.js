@@ -13,6 +13,7 @@ import AlignItems from './pages/flexContainer/AlignItems';
 import FlexGrow from './pages/flexItems/FlexGrow';
 import FlexBasis from './pages/flexItems/FlexBasis';
 import FlexShrink from './pages/flexItems/FlexShrink';
+import Flex from './pages/flexItems/Flex';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -30,6 +31,7 @@ root.render(
         <Route path='/items/flexGrow' element={<FlexGrow />} />
         <Route path='/items/flexBasis' element={<FlexBasis />} />
         <Route path='/items/flexShrink' element={<FlexShrink />} />
+        <Route path='/items/flex' element={<Flex />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>

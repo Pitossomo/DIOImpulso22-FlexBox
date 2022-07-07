@@ -59,8 +59,7 @@ const FlexBasis = () => {
         }}
       />
 
-
-      <h2>flex-basis variável entre itens, flexGrow: 1, container com largura fixa</h2>
+      <h2>flex-basis variável entre itens, flex-grow: 1, container com largura fixa</h2>
       <CodeExample
         style={{ display: "flex", width: "500px" }}
         childrenStyle={{
