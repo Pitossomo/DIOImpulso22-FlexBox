@@ -32,7 +32,7 @@ const Homepage = () => {
           <li><Link to='/items/flexGrow'>flex-grow</Link></li>
           <li><Link to='/items/flexShrink'>flex-shrink</Link></li>
           <li><Link to='/items/flexBasis'>flex-basis</Link></li>
-          <li><Link to='/items/flexShrink'>flex</Link></li>
+          <li><Link to='/items/flex'>flex</Link></li>
         </ul>
 
       </section>
