@@ -18,17 +18,44 @@ const FlexShrink = () => {
       <CodeExample style={{ display: "flex" }} childrenStyle={{ default: { flexShrink: 0 } }} />
 
       <h2>flex-shrink: 1 (padrão), container com largura fixa</h2>
-      <CodeExample style={{ display: "flex", width: "500px" }} childrenStyle={{ default: { flexShrink: 1 } }} />
+      <CodeExample style={{ display: "flex", width: "100px" }} childrenStyle={{ default: { flexShrink: 1 } }} />
 
       <h2>flex-shrink: 0, container com largura fixa</h2>
-      <CodeExample style={{ display: "flex", width: "500px" }} childrenStyle={{ default: { flexShrink: 0 } }} />
+      <CodeExample style={{ display: "flex", width: "100px" }} childrenStyle={{ default: { flexShrink: 0 } }} />
 
       <h2>flex-shrink variável entre itens, container com largura fixa</h2>
       <CodeExample
-        style={{ display: "flex", width: "500px" }}
+        style={{ display: "flex", width: "100px" }}
         childrenStyle={{
-          default: { flexGrow: 1 },
-          1: { flexGrow: 3 }
+          default: { flexShrink: 1 },
+          1: { flexShrink: 3 }
+        }}
+      />
+
+      <h2>flex-shrink variável entre itens, flexBasis: 100px, container com largura fixa</h2>
+      <CodeExample
+        style={{ display: "flex", width: "300px" }}
+        childrenStyle={{
+          default: { flexShrink: 1, flexBasis: '100px' },
+          1: { flexShrink: 100, flexBasis: '100px' },
+        }}
+      />
+
+      <h2>flex-shrink variável entre itens, flexGrow: 1, container com largura fixa</h2>
+      <CodeExample
+        style={{ display: "flex", width: "300px" }}
+        childrenStyle={{
+          default: { flexShrink: 1, flexGrow: 1 },
+          1: { flexShrink: 100, flexGrow: 1 },
+        }}
+      />
+
+      <h2>flex-shrink variável entre itens, flexGrow: 1, flexBasis: 50px, container com largura fixa</h2>
+      <CodeExample
+        style={{ display: "flex", width: "300px" }}
+        childrenStyle={{
+          default: { flexShrink: 1, flexGrow: 1, flexBasis: '50px' },
+          1: { flexShrink: 100, flexGrow: 1, flexBasis: '50px' },
         }}
       />
 
