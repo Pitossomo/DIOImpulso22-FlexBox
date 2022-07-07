@@ -35,7 +35,6 @@ const Homepage = () => {
           <li><Link to='/items/flex'>flex</Link></li>
           <li><Link to='/items/order'>order</Link></li>
         </ul>
-
       </section>
     </div>
   )

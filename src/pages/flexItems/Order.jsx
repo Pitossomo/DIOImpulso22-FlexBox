@@ -5,44 +5,28 @@ const Order = () => {
     <div className="wrapper">
       <h1>Propriedade order</h1>
       <ul>
-        <li>Atalho para as propriedades grow, shrink e basis (nesta ordem)</li>
-        <li>Precisa de 3 valores: o primeiro para o grow, o segundo para o shrink e o terceiro para o basis</li>
-        <li>Quando o flex é definido sem a terceira propriedade, o padrão do basis passa a ser 0</li>
+        <li>Define a prioridade do item no ordenamento em relação aos seus elementos irmãos </li>
+        <li>Os elementos de menor ordem aparecem primeiro no eixo principal</li>
+        <li>Utiliza valores numéricos, com o valor zero sendo o padrão</li>
       </ul>
 
-      <h2>flex não definido, container com largura fixa</h2>
-      <CodeExample style={{ display: "flex", width: '500px' }} />
-
-      <h2>flex: 0 1 auto (padrão), container com largura fixa</h2>
-      <CodeExample style={{ display: "flex", width: '500px' }} childrenStyle={{ default: { flex: '0 1 auto' } }} />
-
-      <h2>flex: 0 ~ grow: 0 (padrão), shrink 1 (padrão), basis: 0 (redefinido)</h2>
-      <CodeExample style={{ display: "flex", width: '500px' }} childrenStyle={{ default: { flex: 0 } }} />
-
-      <h2>flex: 1 ~ grow: 1, shrink 1 (padrão), basis: 0 (redefinido)</h2>
-      <CodeExample style={{ display: "flex", width: '500px' }} childrenStyle={{ default: { flex: 1 } }} />
-
-      <h2>flex não definido, container em coluna com altura fixa</h2>
-      <CodeExample style={{ display: "flex", flexDirection: "column", height: '200px' }} />
-
-      <h2>flex: 0 1 auto (padrão), container em coluna com altura fixa</h2>
-      <CodeExample style={{ display: "flex", flexDirection: "column", height: '200px' }} childrenStyle={{ default: { flex: '0 1 auto' } }} />
-
-      <h2>flex: 0 ~ grow: 0 (padrão), shrink 1 (padrão), basis: 0 (redefinido), container em coluna</h2>
-      <CodeExample style={{ display: "flex", flexDirection: "column", height: '200px' }} childrenStyle={{ default: { flex: 0 } }} />
-
-      <h2>flex: 1 ~ grow: 1, shrink 1 (padrão), basis: 0 (redefinido)</h2>
-      <CodeExample style={{ display: "flex", flexDirection: "column", height: '200px' }} childrenStyle={{ default: { flex: 1 } }} />
-
-      <h2>flex variável entre elementos (grow: 1)</h2>
+      <h2>order: 1 para o segundo item</h2>
       <CodeExample
-        style={{ display: "flex", flexDirection: "column", height: '200px' }}
-        childrenStyle={{
-          default: { flex: 0 },
-          '2': { flex: '1 0 200px' },
-          '3': { flex: '2 1 100px' },
-        }} />
+        style={{ display: "flex" }}
+        childrenStyle={{ default: {}, '2': { order: 1 } }}
+      />
 
+      <h2>order: -1 para o segundo item</h2>
+      <CodeExample
+        style={{ display: "flex" }}
+        childrenStyle={{ default: {}, '2': { order: -1 } }}
+      />
+
+      <h2>order: -1 para o segundo item e order: 0 (padrão) para os demais</h2>
+      <CodeExample
+        style={{ display: "flex" }}
+        childrenStyle={{ default: { order: 0 }, '2': { order: -1 } }}
+      />
     </div>
   )
 }
