@@ -14,6 +14,7 @@ import FlexGrow from './pages/flexItems/FlexGrow';
 import FlexBasis from './pages/flexItems/FlexBasis';
 import FlexShrink from './pages/flexItems/FlexShrink';
 import Flex from './pages/flexItems/Flex';
+import Order from './pages/flexItems/Order';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -32,6 +33,7 @@ root.render(
         <Route path='/items/flexBasis' element={<FlexBasis />} />
         <Route path='/items/flexShrink' element={<FlexShrink />} />
         <Route path='/items/flex' element={<Flex />} />
+        <Route path='/items/order' element={<Order />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>

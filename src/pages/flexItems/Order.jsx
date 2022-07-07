@@ -1,9 +1,9 @@
 import CodeExample from "../../components/CodeExample"
 
-const Flex = () => {
+const Order = () => {
   return (
     <div className="wrapper">
-      <h1>Propriedade flex</h1>
+      <h1>Propriedade order</h1>
       <ul>
         <li>Atalho para as propriedades grow, shrink e basis (nesta ordem)</li>
         <li>Precisa de 3 valores: o primeiro para o grow, o segundo para o shrink e o terceiro para o basis</li>
@@ -47,4 +47,4 @@ const Flex = () => {
   )
 }
 
-export default Flex
+export default Order

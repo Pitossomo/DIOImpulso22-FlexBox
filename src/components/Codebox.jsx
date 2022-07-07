@@ -3,7 +3,7 @@ import Codeline from "./Codeline"
 
 const Codebox = ({ style, childrenStyle, numItems }) => {
   const containerInlineStyle = objectToCSS(style)
-  const defaultChildrenInlineStyle = objectToCSS(childrenStyle.default)
+  const defaultChildrenInlineStyle = objectToCSS(childrenStyle?.default)
 
   const itemDivString = (index, itemStyle) => {
     let itemDiv = `<div`
@@ -22,7 +22,7 @@ const Codebox = ({ style, childrenStyle, numItems }) => {
       {openParentDiv}
       {
         [...Array(numItems)].map((el, i) => {
-          let itemDivStyle = childrenStyle[i + 1] ? objectToCSS(childrenStyle[i + 1]) : defaultChildrenInlineStyle
+          let itemDivStyle = (childrenStyle && childrenStyle[i + 1]) ? objectToCSS(childrenStyle[i + 1]) : defaultChildrenInlineStyle
           return (
             <Codeline key={`c${i + 1}`}>
               {itemDivString(i, itemDivStyle)}
