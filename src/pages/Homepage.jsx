@@ -37,6 +37,16 @@ const Homepage = () => {
           <li><Link to='/items/alignSelf'>flex-align</Link></li>
         </ul>
       </section>
+
+      <section>
+        <h1>Projeto de consolidação</h1>
+        <ul>
+          <li>Projeto de aplicação dos conhecimentos adquiridos no curso</li>
+          <li>Criação de uma Landing Page para um agência de turismo</li>
+          <li><Link to='/finalProject'>Landing page</Link></li>
+        </ul>
+      </section>
+
     </div>
   )
 }

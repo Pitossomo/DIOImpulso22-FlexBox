@@ -16,6 +16,7 @@ import FlexShrink from './pages/flexItems/FlexShrink';
 import Flex from './pages/flexItems/Flex';
 import Order from './pages/flexItems/Order';
 import AlignSelf from './pages/flexItems/AlignSelf';
+import LandingPage from './pages/LandingPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -36,6 +37,7 @@ root.render(
         <Route path='/items/flex' element={<Flex />} />
         <Route path='/items/order' element={<Order />} />
         <Route path='/items/alignSelf' element={<AlignSelf />} />
+        <Route path='finalProject' element={<LandingPage />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>
