@@ -8,11 +8,12 @@ body {
 
 .example>* {
   margin: 5px;
+  flex: 1 1 50%;
 }
 
 pre {
-  width: fit-content;
   white-space: pre-line;
+  overflow: visible;
   padding: 10px;
   background-color: lightgray;
   border-radius: 3px;

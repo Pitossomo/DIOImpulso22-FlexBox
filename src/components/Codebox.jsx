@@ -8,8 +8,8 @@ const Codebox = ({ style, childrenStyle, numItems }) => {
   const itemDivString = (index, itemStyle) => {
     let itemDiv = `<div`
     if (defaultChildrenInlineStyle.length > 1) itemDiv += ` style="${itemStyle}"`
-    itemDiv += `> item ${index + 1
-      }</div> `
+    itemDiv += `>item ${index + 1
+      }</div>`
     return itemDiv
   }
 
@@ -25,7 +25,7 @@ const Codebox = ({ style, childrenStyle, numItems }) => {
           let itemDivStyle = (childrenStyle && childrenStyle[i + 1]) ? objectToCSS(childrenStyle[i + 1]) : defaultChildrenInlineStyle
           return (
             <Codeline key={`c${i + 1}`}>
-              {itemDivString(i, itemDivStyle)}
+              &nbsp;{itemDivString(i, itemDivStyle)}
             </Codeline>
           )
         })
