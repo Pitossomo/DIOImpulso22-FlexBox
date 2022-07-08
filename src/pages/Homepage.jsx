@@ -34,6 +34,7 @@ const Homepage = () => {
           <li><Link to='/items/flexBasis'>flex-basis</Link></li>
           <li><Link to='/items/flex'>flex</Link></li>
           <li><Link to='/items/order'>order</Link></li>
+          <li><Link to='/items/alignSelf'>flex-align</Link></li>
         </ul>
       </section>
     </div>
