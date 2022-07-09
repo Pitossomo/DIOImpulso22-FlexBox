@@ -43,7 +43,7 @@ const Homepage = () => {
         <ul>
           <li>Projeto de aplicação dos conhecimentos adquiridos no curso</li>
           <li>Criação de uma Landing Page para um agência de turismo</li>
-          <li><Link to='/finalProject'>Landing page</Link></li>
+          <li><Link to='#'>Landing page</Link></li>
         </ul>
       </section>
 
