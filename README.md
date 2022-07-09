@@ -1,6 +1,8 @@
 # DIOImpulso22-FlexBox
 Diretório para acompanhamento do curso "Posicionando elementos com Flexbox em CSS" no bootcamp DIO Impulso JS 2022
 
+[Projeto no GitHub Pages](https://pitossomo.github.io/DIOImpulso22-FlexBox/)
+
 ---------
 
 # Getting Started with Create React App

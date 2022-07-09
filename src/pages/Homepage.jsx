@@ -42,8 +42,8 @@ const Homepage = () => {
         <h1>Projeto de consolidação</h1>
         <ul>
           <li>Projeto de aplicação dos conhecimentos adquiridos no curso</li>
-          <li>Criação de uma Landing Page para um agência de turismo</li>
-          <li><Link to='https://pitossomo.github.io/cuddly-garbanzo/'>Landing page</Link></li>
+          <li>Criação de uma Landing Page responsiva para uma agência de turismo</li>
+          <li><a target="_blank" href="https://pitossomo.github.io/cuddly-garbanzo/">Landing page</a></li>
         </ul>
       </section>
 
