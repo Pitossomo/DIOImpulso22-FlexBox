@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/DIOImpulso22-FlexBox/static/css/main.3c4422b6.css",
-    "main.js": "/DIOImpulso22-FlexBox/static/js/main.fea902fb.js",
+    "main.js": "/DIOImpulso22-FlexBox/static/js/main.e6f77237.js",
     "index.html": "/DIOImpulso22-FlexBox/index.html",
     "main.3c4422b6.css.map": "/DIOImpulso22-FlexBox/static/css/main.3c4422b6.css.map",
-    "main.fea902fb.js.map": "/DIOImpulso22-FlexBox/static/js/main.fea902fb.js.map"
+    "main.e6f77237.js.map": "/DIOImpulso22-FlexBox/static/js/main.e6f77237.js.map"
   },
   "entrypoints": [
     "static/css/main.3c4422b6.css",
-    "static/js/main.fea902fb.js"
+    "static/js/main.e6f77237.js"
   ]
 }
